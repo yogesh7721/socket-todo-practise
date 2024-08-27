@@ -9,7 +9,7 @@ exports.createTodo = asynchandler(async (req, res) => {
 })
 exports.readTodo = asynchandler(async (req, res) => {
     const result = await Todo.find()
-    res.json({ message: "Todo Add Success", result })
+    res.json({ message: "readTodo success", result })
 })
 exports.updateTodo = asynchandler(async (req, res) => {
     await Todo.findByIdAndUpdate(req.body, req.params.id)
@@ -19,3 +19,5 @@ exports.deleteTodo = asynchandler(async (req, res) => {
     await Todo.findByIdAndDelete(req.params.id)
     res.json({ message: "Todo Update Success" })
 })
+
+
