@@ -1,6 +1,6 @@
 
 
-const { readTodo, createTodo, updateTodo, deleteTodo } = require("../controller/todo.controller")
+const { createTodo, updateTodo, deleteTodo, readTodo } = require("../controller/todo.controller")
 
 const router = require("express").Router()
 
